@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      h1 {background-color: aquamarine;color: purple;
+      h1 {
+        background-color: aquamarine;
+        color: purple;
       }
     </style>
-
   </head>
   <body>
     <header></header>
     <main>
       <h1>Class 1 Lab</h1>
-      <p style="color: blue; background-color: silver; font-size: 25pt;">
+      <p style="color: blue; background-color: silver; font-size: 25pt">
         What is your name?
       </p>
       <p style="color: red; background-color: black; font-size: 25pt">
@@ -27,8 +28,29 @@
       <p style="color: Green; background-color: pink; font-size: 25pt">
         What is your favorite color?
       </p>
+      <script>
+        let yourName = prompt('What is your name?');
+        console.log(yourName);
+        alert('Hello ' + yourName);
+
+        let yourAge = prompt('What is your age?');
+        console.log(yourAge);
+        alert(`${yourAge} !?!?! dang your are old.`);
+
+        let place = prompt('Where are your from?');
+        console.log(place);
+        alert(`I bet ${place} is a great place to live.`);
+
+        let favoriteColor = prompt('What is your favorite color?');
+        console.log(favoriteColor);
+        alert(`${favoriteColor} is a beautiful color.`);
+
+        alert(
+          `Sooo, your name is ${yourName}, you are ${yourAge} years old.  You live in ${place} and your favorite color is ${favoriteColor}`
+        );
+      </script>
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
